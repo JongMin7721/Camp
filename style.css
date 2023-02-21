@@ -1,26 +1,75 @@
-.team-board{
-    width: 1080px;
-    height: 700px;
+body {
+    background-color: lightblue;
+}
+
+.team-board {
+    width: 1880px;
+    height: 950px;
+    border-radius: 10px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-top: 1px solid black;
+    display: flex;
 }
 
 .team-leader {
-    position: absolute;
-    left: 100px;
-    top: 250px;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    flex-grow: 2
 }
 
-.sale{
-    position: absolute;
-    left: 1400px;
-    top: 250px;
+.sales {
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.sale-now{
-    position: absolute;
-    left: 1400px;
-    top: 700px;
+.sale-now {
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    flex-grow: 1;
+}
+
+.sale-now-button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.sale-now-button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.sale-now-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+.sale {
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    flex-grow: 2;
 }
