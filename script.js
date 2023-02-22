@@ -1,3 +1,13 @@
+import mysql from 'mysql';
+
+var db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '11111111',
+    database: 'Camp'
+});
+
+db.connect();
 
 var num = 1;
 
